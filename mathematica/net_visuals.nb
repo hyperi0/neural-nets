@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1978365,      32772]
-NotebookOptionsPosition[   1975327,      32719]
-NotebookOutlinePosition[   1975722,      32735]
-CellTagsIndexPosition[   1975679,      32732]
+NotebookDataLength[   1978996,      32787]
+NotebookOptionsPosition[   1975956,      32734]
+NotebookOutlinePosition[   1976350,      32750]
+CellTagsIndexPosition[   1976307,      32747]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -270,91 +270,104 @@ Cell[BoxData[
               GridBox[{{
                  
                  DynamicModuleBox[{
-                  NeuralNetworks`Private`NetChain`assoc3 = <|
-                    "Type" -> "Chain", 
-                    "Nodes" -> <|
-                    "1" -> <|
-                    "Type" -> "Linear", 
-                    "Arrays" -> <|
+                  NeuralNetworks`Private`NetChain`assoc3 = 
+                   Association[
+                    "Type" -> "Chain", "Nodes" -> 
+                    Association[
+                    "1" -> Association[
+                    "Type" -> "Linear", "Arrays" -> 
+                    Association[
                     "Weights" -> 
                     NeuralNetworks`TensorT[{30, 2}, NeuralNetworks`RealT], 
                     "Biases" -> NeuralNetworks`Nullable[
-                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]]|>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]]], 
+                    "Parameters" -> 
+                    Association[
                     "OutputDimensions" -> {30}, "$OutputSize" -> 30, 
-                    "$InputSize" -> 2, "$InputDimensions" -> {2}|>, 
-                    "Inputs" -> <|
+                    "$InputSize" -> 2, "$InputDimensions" -> {2}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{2}, NeuralNetworks`AtomT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{2}, NeuralNetworks`AtomT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]|>|>, 
-                    "2" -> <|
-                    "Type" -> "Elementwise", "Arrays" -> <||>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]]], "2" -> 
+                    Association[
+                    "Type" -> "Elementwise", "Arrays" -> Association[], 
+                    "Parameters" -> 
+                    Association[
                     "Function" -> NeuralNetworks`ValidatedParameter[Sin], 
-                    "$Dimensions" -> {30}|>, 
-                    "Inputs" -> <|
+                    "$Dimensions" -> {30}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]|>|>, 
-                    "3" -> <|
-                    "Type" -> "Linear", 
-                    "Arrays" -> <|
+                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]]], "3" -> 
+                    Association[
+                    "Type" -> "Linear", "Arrays" -> 
+                    Association[
                     "Weights" -> 
                     NeuralNetworks`TensorT[{3, 30}, NeuralNetworks`RealT], 
                     "Biases" -> NeuralNetworks`Nullable[
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]|>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], 
+                    "Parameters" -> 
+                    Association[
                     "OutputDimensions" -> {3}, "$OutputSize" -> 3, 
-                    "$InputSize" -> 30, "$InputDimensions" -> {30}|>, 
-                    "Inputs" -> <|
+                    "$InputSize" -> 30, "$InputDimensions" -> {30}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{30}, NeuralNetworks`RealT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>|>, 
-                    "4" -> <|
-                    "Type" -> "Elementwise", "Arrays" -> <||>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], "4" -> 
+                    Association[
+                    "Type" -> "Elementwise", "Arrays" -> Association[], 
+                    "Parameters" -> 
+                    Association[
                     "Function" -> NeuralNetworks`ValidatedParameter[Tanh], 
-                    "$Dimensions" -> {3}|>, 
-                    "Inputs" -> <|
+                    "$Dimensions" -> {3}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>|>, 
-                    "5" -> <|
-                    "Type" -> "Linear", 
-                    "Arrays" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], "5" -> 
+                    Association[
+                    "Type" -> "Linear", "Arrays" -> 
+                    Association[
                     "Weights" -> 
                     NeuralNetworks`TensorT[{3, 3}, NeuralNetworks`RealT], 
                     "Biases" -> NeuralNetworks`Nullable[
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]|>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], 
+                    "Parameters" -> 
+                    Association[
                     "OutputDimensions" -> {3}, "$OutputSize" -> 3, 
-                    "$InputSize" -> 3, "$InputDimensions" -> {3}|>, 
-                    "Inputs" -> <|
+                    "$InputSize" -> 3, "$InputDimensions" -> {3}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>|>, 
-                    "6" -> <|
-                    "Type" -> "Elementwise", "Arrays" -> <||>, 
-                    "Parameters" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], "6" -> 
+                    Association[
+                    "Type" -> "Elementwise", "Arrays" -> Association[], 
+                    "Parameters" -> 
+                    Association[
                     "Function" -> 
                     NeuralNetworks`ValidatedParameter[LogisticSigmoid], 
-                    "$Dimensions" -> {3}|>, 
-                    "Inputs" -> <|
+                    "$Dimensions" -> {3}], "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>|>|>, 
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]]], 
                     "Edges" -> {
                     NeuralNetworks`NetPath["Nodes", "1", "Inputs", "Input"] -> 
                     NeuralNetworks`NetPath["Inputs", "Input"], 
@@ -370,13 +383,14 @@ Cell[BoxData[
                     NeuralNetworks`NetPath["Nodes", "5", "Outputs", "Output"],
                      NeuralNetworks`NetPath["Outputs", "Output"] -> 
                     NeuralNetworks`NetPath[
-                    "Nodes", "6", "Outputs", "Output"]}, 
-                    "Inputs" -> <|
+                    "Nodes", "6", "Outputs", "Output"]}, "Inputs" -> 
+                    Association[
                     "Input" -> 
-                    NeuralNetworks`TensorT[{2}, NeuralNetworks`AtomT]|>, 
-                    "Outputs" -> <|
+                    NeuralNetworks`TensorT[{2}, NeuralNetworks`AtomT]], 
+                    "Outputs" -> 
+                    Association[
                     "Output" -> 
-                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]|>|>, 
+                    NeuralNetworks`TensorT[{3}, NeuralNetworks`RealT]]], 
                    NeuralNetworks`Private`NetChain`opart, 
                    NeuralNetworks`Private`NetChain`part, 
                    NeuralNetworks`Private`NetChain`selected = Null}, 
@@ -566,7 +580,8 @@ Cell[BoxData[
                     PassEventsUp -> True}]]}, 
                     NeuralNetworks`FormatSelectedParameterChain[
                     NeuralNetworks`Private`NetChain`selected, 
-                    NeuralNetworks`Private`NetChain`part, <||>, {}]}, 
+                    NeuralNetworks`Private`NetChain`part, 
+                    Association[], {}]}, 
                     GridBoxSpacings -> {"Columns" -> {{1}}}, 
                     GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                     GridFrameMargins -> {{0, 0}, {0, 0}}], 
@@ -32719,7 +32734,7 @@ MIl+Ce0fDJKumGQl7Fv+Ev4ftQUr7w==
 },
 WindowSize->{720., 755.25},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
-FrontEndVersion->"13.2 for Linux x86 (64-bit) (January 31, 2023)",
+FrontEndVersion->"12.3 for Mac OS X ARM (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"46dc2d5e-b75d-4435-a9fb-583ead464b0b"
 ]
@@ -32735,44 +32750,44 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 447, 10, 25, "Input",ExpressionUUID->"083e9298-962c-459e-bcb1-2b61e46d278e"],
-Cell[1030, 34, 27785, 567, 56, "Output",ExpressionUUID->"c06a76c7-b82f-4d62-8b7d-bd258c3bcf4a"]
+Cell[580, 22, 447, 10, 30, "Input",ExpressionUUID->"083e9298-962c-459e-bcb1-2b61e46d278e"],
+Cell[1030, 34, 28414, 582, 62, "Output",ExpressionUUID->"c06a76c7-b82f-4d62-8b7d-bd258c3bcf4a"]
 }, Open  ]],
-Cell[28830, 604, 628, 15, 40, "Input",ExpressionUUID->"5d40935e-2b5e-4ad4-b715-9aa1d70e9a8b"],
-Cell[29461, 621, 303, 7, 22, "Input",ExpressionUUID->"3f4652b5-fa08-4587-b522-0f87f9193621"],
-Cell[29767, 630, 277, 6, 22, "Input",ExpressionUUID->"c3d26bce-3b03-49e1-aadd-57d94a157f78"],
+Cell[29459, 619, 628, 15, 52, "Input",ExpressionUUID->"5d40935e-2b5e-4ad4-b715-9aa1d70e9a8b"],
+Cell[30090, 636, 303, 7, 30, "Input",ExpressionUUID->"3f4652b5-fa08-4587-b522-0f87f9193621"],
+Cell[30396, 645, 277, 6, 30, "Input",ExpressionUUID->"c3d26bce-3b03-49e1-aadd-57d94a157f78"],
 Cell[CellGroupData[{
-Cell[30069, 640, 680, 18, 39, "Input",ExpressionUUID->"b83d795f-8841-4c72-926c-c042149d7842"],
-Cell[30752, 660, 1807324, 29704, 330, "Output",ExpressionUUID->"06b6b48b-01da-4392-ac3d-0f2db333b683"]
+Cell[30698, 655, 680, 18, 52, "Input",ExpressionUUID->"b83d795f-8841-4c72-926c-c042149d7842"],
+Cell[31381, 675, 1807324, 29704, 439, "Output",ExpressionUUID->"06b6b48b-01da-4392-ac3d-0f2db333b683"]
 }, Open  ]],
-Cell[1838091, 30367, 488, 11, 22, "Input",ExpressionUUID->"ba2570b4-dc2e-4481-8d23-9890c4b7c340"],
-Cell[1838582, 30380, 1129, 26, 95, "Input",ExpressionUUID->"e72308d6-c4b4-4ac0-8c86-0b80d930c46b"],
+Cell[1838720, 30382, 488, 11, 52, "Input",ExpressionUUID->"ba2570b4-dc2e-4481-8d23-9890c4b7c340"],
+Cell[1839211, 30395, 1129, 26, 136, "Input",ExpressionUUID->"e72308d6-c4b4-4ac0-8c86-0b80d930c46b"],
 Cell[CellGroupData[{
-Cell[1839736, 30410, 290, 5, 23, "Input",ExpressionUUID->"66d44eb5-29cb-4b00-a28e-6e6cf0504b27"],
-Cell[1840029, 30417, 1561, 37, 76, "Output",ExpressionUUID->"c6a94a53-d631-4a17-809e-ed595bc9cba1"]
+Cell[1840365, 30425, 290, 5, 30, "Input",ExpressionUUID->"66d44eb5-29cb-4b00-a28e-6e6cf0504b27"],
+Cell[1840658, 30432, 1561, 37, 124, "Output",ExpressionUUID->"c6a94a53-d631-4a17-809e-ed595bc9cba1"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1841627, 30459, 256, 5, 22, "Input",ExpressionUUID->"18938958-2ac1-49eb-a2d6-1ebcff10de02"],
-Cell[1841886, 30466, 443, 8, 25, "Output",ExpressionUUID->"65028c92-7d71-4e14-9911-5817f0a65805"]
+Cell[1842256, 30474, 256, 5, 30, "Input",ExpressionUUID->"18938958-2ac1-49eb-a2d6-1ebcff10de02"],
+Cell[1842515, 30481, 443, 8, 34, "Output",ExpressionUUID->"65028c92-7d71-4e14-9911-5817f0a65805"]
 }, Open  ]],
-Cell[1842344, 30477, 336, 7, 22, "Input",ExpressionUUID->"77992d8f-0cb1-4c7d-bc44-00d640329af2"],
+Cell[1842973, 30492, 336, 7, 30, "Input",ExpressionUUID->"77992d8f-0cb1-4c7d-bc44-00d640329af2"],
 Cell[CellGroupData[{
-Cell[1842705, 30488, 252, 4, 23, "Input",ExpressionUUID->"9a59e98e-d7e2-4aaf-9eff-2fdea564ecae"],
-Cell[1842960, 30494, 196, 3, 25, "Output",ExpressionUUID->"3c448283-d83f-4e40-b699-4741d3c23d3c"]
+Cell[1843334, 30503, 252, 4, 30, "Input",ExpressionUUID->"9a59e98e-d7e2-4aaf-9eff-2fdea564ecae"],
+Cell[1843589, 30509, 196, 3, 34, "Output",ExpressionUUID->"3c448283-d83f-4e40-b699-4741d3c23d3c"]
 }, Open  ]],
-Cell[1843171, 30500, 568, 10, 22, "Input",ExpressionUUID->"54356833-2094-483b-8dec-58d48f046df6"],
+Cell[1843800, 30515, 568, 10, 30, "Input",ExpressionUUID->"54356833-2094-483b-8dec-58d48f046df6"],
 Cell[CellGroupData[{
-Cell[1843764, 30514, 392, 9, 22, "Input",ExpressionUUID->"0c904ef8-a1c0-473d-90cd-2f3b0ae6e69a"],
-Cell[1844159, 30525, 477, 8, 25, "Output",ExpressionUUID->"217a51e0-2829-4383-bfce-f76734ecefee"]
+Cell[1844393, 30529, 392, 9, 30, "Input",ExpressionUUID->"0c904ef8-a1c0-473d-90cd-2f3b0ae6e69a"],
+Cell[1844788, 30540, 477, 8, 34, "Output",ExpressionUUID->"217a51e0-2829-4383-bfce-f76734ecefee"]
 }, Open  ]],
-Cell[1844651, 30536, 222, 5, 25, "Input",ExpressionUUID->"a8d499ee-01ee-4401-8e63-a58ed679d5ec"],
-Cell[1844876, 30543, 1122, 31, 121, "Input",ExpressionUUID->"d0b5bb74-8352-486e-aa9d-97473efe0b3e"],
-Cell[1846001, 30576, 364, 8, 23, "Input",ExpressionUUID->"6b678a55-e9fc-4c43-906b-4bd8a94003a6"],
-Cell[1846368, 30586, 304, 7, 22, "Input",ExpressionUUID->"fb0026ca-4d2e-4eb4-be62-2c829d7873d7"],
-Cell[1846675, 30595, 278, 6, 22, "Input",ExpressionUUID->"35b92748-255f-436c-8a25-2f50511fcede"],
+Cell[1845280, 30551, 222, 5, 30, "Input",ExpressionUUID->"a8d499ee-01ee-4401-8e63-a58ed679d5ec"],
+Cell[1845505, 30558, 1122, 31, 157, "Input",ExpressionUUID->"d0b5bb74-8352-486e-aa9d-97473efe0b3e"],
+Cell[1846630, 30591, 364, 8, 30, "Input",ExpressionUUID->"6b678a55-e9fc-4c43-906b-4bd8a94003a6"],
+Cell[1846997, 30601, 304, 7, 30, "Input",ExpressionUUID->"fb0026ca-4d2e-4eb4-be62-2c829d7873d7"],
+Cell[1847304, 30610, 278, 6, 30, "Input",ExpressionUUID->"35b92748-255f-436c-8a25-2f50511fcede"],
 Cell[CellGroupData[{
-Cell[1846978, 30605, 391, 8, 25, "Input",ExpressionUUID->"9d78b4bc-d4aa-4bd1-b329-8326e0d204e4"],
-Cell[1847372, 30615, 127939, 2101, 88, "Output",ExpressionUUID->"4ab921dd-ec45-4e96-890e-189376d22038"]
+Cell[1847607, 30620, 391, 8, 30, "Input",ExpressionUUID->"9d78b4bc-d4aa-4bd1-b329-8326e0d204e4"],
+Cell[1848001, 30630, 127939, 2101, 118, "Output",ExpressionUUID->"4ab921dd-ec45-4e96-890e-189376d22038"]
 }, Open  ]]
 }
 ]
